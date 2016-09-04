@@ -1,0 +1,32 @@
+---
+layout: page
+---
+<div id="blog-container">
+    <div class="container">
+        <div id="blog-search" class="center-block">
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="text" placeholder="请输入文章标题关键字" id="search-key"/>
+                </div>
+                <div class="col-sm-4">
+                    <span id="search-button" class="btn-success btn-lg">搜索</span><span id="reset-button" class="btn-primary btn-lg">显示所有博文</span>
+                </div>
+            </div>
+        </div>
+        <div id="blog-menu">
+            <ul id="article-ul">
+                {% for post in site.posts %}
+                <li class="article-li">
+                    <div>
+                        <a  class="article-title" href="{{ post.url }}">{{ post.title }}</a>
+                        <span class="article-date">{{ post.date | date_to_locale_string }}</span>
+                    </div>
+                    <div class="article-h3">
+                        {{ post.content }}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+#san-container{
+  padding: 3rem 0;
+  .container{
+    padding: 2rem;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
+  .display-header{
+    position: relative;
+    padding-bottom: 1rem;
+    span.glyphicon{
+      font-size: 3rem;
+      position: absolute;
+      vertical-align: center;
+      cursor: pointer;
+      transition: opacify, 0.5s;
+    }
+    span.glyphicon:hover{
+      opacity: 0.5;
+    }
+    span.glyphicon:nth-child(1){
+      left: 1rem;
+    }
+    span.glyphicon:nth-child(2){
+      left: 5rem;
+    }
+    span.glyphicon:nth-child(3){
+      left: 9rem;
+    }
+
+    .img-display{
+      width: 10rem;
+      height: 10rem;
+      margin: 0 auto;
+      background: #333;
+    }
+  }
+  .bref-introduction{
+    text-align: center;
+    font-family: Qiti, sans-serif;
+    height: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    span{
+      font-size: 2rem;
+      font-weight: normal;
+    }
+  }
+  .info-introduction{
+    p{
+      padding: 0 2rem;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .span-romance{
+      color: #00f;
+    }
+    .span-history{
+      color: #cd5c5c;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+---
+layout: page
+---
+<div id="san-container" ng-app="MyBlog" ng-controller="sanCtrl">
+    <div class="container">
+        <div class="grid">
+            <button id="san-back-button" style="display: none"><span>返回</span></button>
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <img src="/src/img/san/cao.png" data-id="caocao"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/guan.png" data-id="guanyu"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/liu.png" data-id="liubei"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/lv.png" data-id="lvbu"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/xu.png" data-id="xushu"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/zhanghe.png" data-id="zhanghe"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/zhangliao.png" data-id="zhangliao"/>
+            </div>
+            <div class="grid-item">
+                <img src="/src/img/san/zhao.png" data-id="zhaoyun"/>
+            </div>
+        </div>
+        <div class="san-display" style="display: none">
+            <div class="display-header">
+                <span class="glyphicon glyphicon-home"></span>
+                <span class="glyphicon glyphicon-arrow-left"></span>
+                <span class="glyphicon glyphicon-arrow-right"></span>
+                <div class="img-display" style="background: url('{{ infoIntro.img }}'); background-size: cover"></div>
+            </div>
+            <div class="bref-introduction">
+                {{ infoIntro.name }}<span>{{ infoIntro.nameZi }}</span>
+            </div>
+            <div class="info-introduction">
+                <p class="romance"><span class="span-romance">【演】</span>{{ infoIntro.romance }}</p>
+                <p class="history"><span class="span-history">【史】</span>{{ infoIntro.history }}</p>
+            </div>
+        </div>
+    </div>
+</div>
