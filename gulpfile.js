@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     pump = require('pump'),
     concat = require('gulp-concat'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    watch = require('gulp-watch');
 
 gulp.task('compress', function (cb) {
     pump([
@@ -22,11 +23,16 @@ gulp.task('concatjs', function() {
 
 gulp.task('sass', function () {
     return gulp.src('./src/sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass())
         .pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('sass:watch', function () {
+    gulp.watch('./src/sass/**/*.scss', ['sass']);
+});
+
+gulp.task('watch', ['compress', 'sass'], function (){
+    gulp.watch('src/javascript/**/*.js', ['compress']);
     gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
 

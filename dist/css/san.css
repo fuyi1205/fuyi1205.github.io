@@ -1,0 +1,85 @@
+#san-container {
+  padding: 3rem 0; }
+  #san-container .container {
+    padding: 2rem; }
+  #san-container .display-header {
+    position: relative;
+    padding-bottom: 1rem; }
+    #san-container .display-header span.glyphicon {
+      font-size: 3rem;
+      position: absolute;
+      vertical-align: center;
+      cursor: pointer;
+      transition: opacify, 0.5s; }
+    #san-container .display-header span.glyphicon:hover {
+      opacity: 0.5; }
+    #san-container .display-header span.glyphicon:nth-child(1) {
+      left: 1rem; }
+    #san-container .display-header span.glyphicon:nth-child(2) {
+      left: 5rem; }
+    #san-container .display-header span.glyphicon:nth-child(3) {
+      left: 9rem; }
+  #san-container .bref-introduction {
+    text-align: center;
+    font-family: Qiti, sans-serif;
+    height: 4rem;
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem; }
+    #san-container .bref-introduction span {
+      font-size: 2rem;
+      font-weight: normal; }
+  #san-container .info-introduction p {
+    padding: 0 2rem;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify; }
+  #san-container .info-introduction .span-romance {
+    color: #00f; }
+  #san-container .info-introduction .span-history {
+    color: #cd5c5c; }
+
+.log_form {
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  width: 300px;
+  padding: 40px 20px;
+  margin-left: -150px;
+  background: #fff;
+  z-index: 10;
+  text-align: center; }
+  .log_form .form-group {
+    text-align: left;
+    position: relative; }
+    .log_form .form-group input {
+      display: block;
+      width: 60%;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+      border-bottom: 2px solid #000;
+      border-radius: 0;
+      animation: log 1s ease-in-out forwards; }
+
+@keyframes log {
+  0% {
+    width: 60%;
+    padding: 0; }
+  50% {
+    width: 100%;
+    padding: 0; }
+  100% {
+    width: 100%;
+    padding: 5px; } }
+    .log_form .form-group .glyphicon {
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      margin-top: 1rem; }
+    .log_form .form-group .glyphicon-remove {
+      color: red; }

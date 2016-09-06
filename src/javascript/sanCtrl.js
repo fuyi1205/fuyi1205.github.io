@@ -1,47 +1,31 @@
 /**
  * Created by fuyi on 2016/7/24.
  */
-var myAngular = angular.module("MyBlog",[]);
+var myAngular = angular.module("MyBlog",[]),
+    dom_coll = {
+        item: $('.grid-item'),
+        grid: $('.grid'),
+        san: $('.san-display'),
+        bref: $('.bref-introduction')
+    };
+
 myAngular.controller("sanCtrl", ['$scope', '$http', function ($scope, $http){
-    $("#san-container").on("click", ".grid-item", function (){
+    $(document).on("click", ".grid-item", function (){
         var id = $(this).find("img").attr("data-id");
-        $http.get("../san/san.json").success(function (response){
-            for(var i in response){
-                if(response[i].id == id){
-                    $scope.infoIntro = response[i];
-                    break;
+        $http.get("/src/json/san.json").success(function (response){
+            $scope.info = response;
+            response.forEach(function (item){
+                if (item.id == id){
+                    $scope.item = item;
                 }
-            }
+            });
         });
-        $(".grid").fadeOut();
-        $(".san-display").fadeIn();
+        dom_coll.grid.fadeOut();
+        dom_coll.san.fadeIn();
     }).on("click", ".glyphicon-home", function (){
-        $(".grid").fadeIn();
-        $(".san-display").fadeOut();
-    }).on("click", ".glyphicon-arrow-left", function () {
-        var nameZi = $(".bref-introduction").find("span").text();
-        $http.get("/san/san.json").success(function (response) {
-            for (var i in response) {
-                if (response[i].nameZi == nameZi) {
-                    i = (i - 1) < 0 ? parseInt(i) + 7 : i - 1;
-                    console.log(i);
-                    $scope.infoIntro = response[i];
-                    break;
-                }
-            }
-        });
-    }).on("click", ".glyphicon-arrow-right", function () {
-        var nameZi = $(".bref-introduction").find("span").text();
-        $http.get("/san/san.json").success(function (response) {
-            for (var i in response) {
-                if (response[i].nameZi == nameZi) {
-                    i = (parseInt(i) + 1) > 7 ? i - 7 : parseInt(i) + 1;
-                    $scope.infoIntro = response[i];
-                    break;
-                }
-            }
-        });
-    });
+        dom_coll.grid.fadeIn();
+        dom_coll.san.fadeOut();
+    })
 }]);
 
 

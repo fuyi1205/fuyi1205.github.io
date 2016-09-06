@@ -1,17 +1,12 @@
 //菜单栏效果
 (function () {
-    var li = $(".view-desktop .dropdown"),
-        a = li.find("a"),
-        showMenu = null,
-        shutMenu = null;
-    a.bind("mouseenter", function () {
-        clearTimeout(showMenu);
-        var now = $(this);
-        showMenu = setTimeout(function (){
-            now.next().slideDown();
-        }, 100);
-    }).bind("click", function (event) {
-        var url = event.target.getAttribute("href");
+    var showMenu = null,
+        shutMenu = null,
+        menu_li = $(".dropdown");
+
+    //修复a标签跳转问题
+    $(document).on("mousedown", "a.dropdown-toggle", function () {
+        var url = $(this).attr("href");
         switch (url) {
             case "/blog/":
                 window.location.pathname = "/blog/";
@@ -21,41 +16,46 @@
                 break;
             case "/san/":
                 window.location.pathname = "/san/";
-                break;
         }
-    });
-    li.bind("mouseleave", function () {
-        clearTimeout(shutMenu);
+    }).on("mouseenter", "a.dropdown-toggle", function () {
+        clearTimeout(showMenu);
         var now = $(this);
-        shutMenu = setTimeout(function (){
-            now.find("ul").slideUp();
+        showMenu = setTimeout(function () {
+            now.next().slideDown();
+        }, 100);
+    }).on("mouseleave", ".dropdown", function () {
+        clearTimeout(shutMenu);
+        shutMenu = setTimeout(function () {
+            menu_li.find("ul").slideUp();
         }, 100);
     });
+
+
     //页面跳转时菜单高亮
     var path = window.location.pathname,
         reg = /\/\d{4}\/\d{2}\/\d{2}\/\w+\.html/;
-    li.prev().removeClass("active");
-    li.removeClass("active");
+    menu_li.prev().removeClass("active");
+    menu_li.removeClass("active");
     switch (path) {
         case "/":
-            li.eq(0).prev().addClass("active");
+            menu_li.eq(0).prev().addClass("active");
             break;
         case "/blog/":
-            li.eq(0).addClass("active");
-            li.eq(0).find("#show-info").addClass("active");
+            menu_li.eq(0).addClass("active");
+            $("#show-info").addClass("active");
             break;
         case "/tank/":
-            li.eq(1).addClass("active");
-            li.eq(1).find("li").eq(0).addClass("active");
+            menu_li.eq(1).addClass("active");
+            menu_li.eq(1).find("li").eq(0).addClass("active");
             break;
         case "/san/":
-            li.eq(2).addClass("active");
-            li.eq(2).find("li").eq(0).addClass("active");
+            menu_li.eq(2).addClass("active");
+            menu_li.eq(2).find("li").eq(0).addClass("active");
             break;
     }
     //博文正文菜单高亮显示
     if (reg.test(path)) {
-        li.eq(0).addClass("active");
+        menu_li.eq(0).addClass("active");
     }
 
 })();
@@ -95,7 +95,6 @@
     $("#index-contact").bind("mouseleave", function () {
         $("#mail-to").slideUp();
         info.css({background: 'url("src/img/info/face.png")'}).text("");
-        ;
     })
 })();
 
@@ -198,10 +197,35 @@
     }
 })();
 
-//地理定位
-navigator.geolocation.getCurrentPosition(function (position) {
-    console.log(position.coords.latitude + "and" + position.coords.longitude);
-});
+//登录注册模块，学习使用IndexedDB
+(function (){
+    var form = $(".log_form");
+    $(document).on("click", ".register", function (){
+        form.fadeToggle();
+        $("#log_in").hide();
+    }).on('click', ".loginIn", function (){
+        form.fadeToggle();
+        $("#log_in").show();
+    });
+})();
+// (function (){
+//     var dom = {
+//         log : $("#log_in"),
+//         rgs : $("#register"),
+//         name: $("#username"),
+//         pwd: $("#pwd")
+//     };
+//     var indexDB = window.indexDB;
+//     var request, database;
+//     request = indexedDB.open("userlist");
+//     request.onerror = function (){
+//         alert("数据库访问失败！");
+//
+//     }
+//     $(document).on("click", "#register", function (){
+//         localStorage.setItem("name", $(this).val());
+//     });
+// })();
 
 
 

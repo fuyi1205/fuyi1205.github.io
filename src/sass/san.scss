@@ -2,8 +2,6 @@
   padding: 3rem 0;
   .container{
     padding: 2rem;
-    background: rgba(0,0,0,0.2);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
   }
   .display-header{
     position: relative;
@@ -28,17 +26,19 @@
       left: 9rem;
     }
 
-    .img-display{
-      width: 10rem;
-      height: 10rem;
-      margin: 0 auto;
-      background: #333;
-    }
+    //.img-display{
+    //  display: blockg;
+    //  width: 10rem;
+    //  height: 10rem;
+    //  margin: 0 auto;
+    //  background: #333;
+    //}
   }
   .bref-introduction{
     text-align: center;
     font-family: Qiti, sans-serif;
     height: 4rem;
+    padding-top: 1rem;
     font-size: 3rem;
     font-weight: bold;
     line-height: 4rem;
@@ -61,4 +61,48 @@
       color: #cd5c5c;
     }
   }
+}
+
+.log_form{
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  width: 300px;
+  padding: 40px 20px;
+  margin-left: -150px;
+  background: #fff;
+  z-index: 10;
+  text-align: center;
+  .form-group{
+    text-align: left;
+    position: relative;
+    input{
+      display: block;
+      width: 60%;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+      border-bottom: 2px solid #000;
+      border-radius: 0;
+      animation: log 1s ease-in-out forwards;
+      @keyframes log {
+        0%{width: 60%; padding: 0}
+        50%{width: 100%;padding: 0}
+        100%{width: 100%;padding: 5px}
+      }
+    }
+    .glyphicon{
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      margin-top: 1rem;
+    }
+    .glyphicon-remove{
+      color: red;
+    }
+  }
+
 }
