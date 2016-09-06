@@ -49,6 +49,7 @@
   padding: 40px 20px;
   margin-left: -150px;
   background: #fff;
+  border: none;
   z-index: 10;
   text-align: center; }
   .log_form .form-group {

@@ -502,4 +502,12 @@ p.img-title {
     #san-container .grid-item {
         width: 50%;
     }
+
+    .search-button-box{
+        padding-top: 0.8rem;
+    }
+
+    #blog-search span{
+        float: none;
+    }
 }

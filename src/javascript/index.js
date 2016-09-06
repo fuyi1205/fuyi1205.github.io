@@ -5,7 +5,7 @@
         menu_li = $(".dropdown");
 
     //修复a标签跳转问题
-    $(document).on("mousedown", "a.dropdown-toggle", function () {
+    $(document).on("mousedown", "a.dropdown-desktop", function () {
         var url = $(this).attr("href");
         switch (url) {
             case "/blog/":
@@ -17,13 +17,13 @@
             case "/san/":
                 window.location.pathname = "/san/";
         }
-    }).on("mouseenter", "a.dropdown-toggle", function () {
+    }).on("mouseenter", "a.dropdown-desktop", function () {
         clearTimeout(showMenu);
         var now = $(this);
         showMenu = setTimeout(function () {
             now.next().slideDown();
         }, 100);
-    }).on("mouseleave", ".dropdown", function () {
+    }).on("mouseleave", ".view-desktop .dropdown", function () {
         clearTimeout(shutMenu);
         shutMenu = setTimeout(function () {
             menu_li.find("ul").slideUp();
