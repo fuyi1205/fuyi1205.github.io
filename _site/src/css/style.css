@@ -1,7 +1,7 @@
-@font-face {
-    font-family: Qiti;
-    src: url("../../src/fonts/QiTi.woff");
-}
+/*@font-face {*/
+    /*font-family: Qiti;*/
+    /*src: url("../../src/fonts/QiTi.woff");*/
+/*}*/
 
 * {
     padding: 0;
@@ -232,12 +232,12 @@ footer p span:nth-child(2) {
     background: rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.01);
     border-radius: 1px;
-    font-family: Qiti, 'Microsoft YaHei', sans-serif;
+    font-family: 'Microsoft YaHei', sans-serif;
 }
 
 .article-li a {
     padding: 6px 0 6px 3px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: none;
     transition: text-shadow 0.2s;
     color: #000;
@@ -259,7 +259,7 @@ footer p span:nth-child(2) {
 }
 
 .article-h3 .con-content h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
 }
 
