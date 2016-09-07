@@ -17,7 +17,7 @@ title: 用JavaScript获取页面元素的位置（转载）
     <h3>二、获取网页的大小</h3>
     <p>网页上的每个元素，都有clientHeight和clientWidth属性。这两个属性指元素的内容部分再加上padding的所占据的视觉面积，不包括border和滚动条占用的空间。</p>
     <div class="img-container">
-        <img src="/src/img/post/20166121.gif" alt="图被妖怪住走了"/>
+        <img src="/dist/img/post/20166121.gif" alt="图被妖怪住走了"/>
     </div>
     <p class="img-title">图一 clientHeight和clientWidth属性</p>
     <p>因此，document元素的clientHeight和clientWidth属性，就代表了网页的大小。</p>
@@ -78,7 +78,7 @@ title: 用JavaScript获取页面元素的位置（转载）
     <p>网页元素的绝对位置，指该元素的左上角相对于整张网页左上角的坐标。这个绝对位置要通过计算才能得到。</p>
     <p>首先，每个元素都有offsetTop和offsetLeft属性，表示该元素的左上角与父容器（offsetParent对象）左上角的距离。所以，只需要将这两个值进行累加，就可以得到该元素的绝对坐标。</p>
     <div class="img-container">
-        <img src="/src/img/post/20166122.gif" alt="图被妖怪住走了"/>
+        <img src="/dist/img/post/20166122.gif" alt="图被妖怪住走了"/>
     </div>
     <p class="img-title">图二 offsetTop和offsetLeft属性</p>
     <p>下面两个函数可以用来获取绝对位置的横坐标和纵坐标。</p>
@@ -107,7 +107,7 @@ title: 用JavaScript获取页面元素的位置（转载）
     <p>网页元素的相对位置，指该元素左上角相对于浏览器窗口左上角的坐标。</p>
     <p>有了绝对位置以后，获得相对位置就很容易了，只要将绝对坐标减去页面的滚动条滚动的距离就可以了。滚动条滚动的垂直距离，是document对象的scrollTop属性；滚动条滚动的水平距离是document对象的scrollLeft属性。</p>
     <div class="img-container">
-        <img src="/src/img/post/20166123.gif" alt="图被妖怪住走了"/>
+        <img src="/dist/img/post/20166123.gif" alt="图被妖怪住走了"/>
     </div>
     <p class="img-title">图三 scrollTop和scrollLeft属性</p>
     <p>对上一节中的两个函数进行相应的改写：</p>
