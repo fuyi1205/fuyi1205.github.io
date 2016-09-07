@@ -1,42 +1,46 @@
 ---
 layout: page
 ---
-<div id="san-container">
+<div id="san-container" ng-app="MyBlog" ng-controller="sanCtrl">
     <div class="container">
-        <div class="grid">
-            <button id="san-back-button" style="display: none"><span>返回</span></button>
+        <div class="grid" ng-show="toggle_img">
             <div class="grid-sizer"></div>
-            <div class="grid-item">
-                <img src="/src/img/san/cao.png" data-id="caocao"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#0"><img src="/src/img/san/cao.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/guan.png" data-id="guanyu"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#1"><img src="/src/img/san/liu.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/liu.png" data-id="liubei"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#2"><img src="/src/img/san/guan.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/lv.png" data-id="lvbu"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#3"><img src="/src/img/san/lv.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/xu.png" data-id="xushu"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#4"><img src="/src/img/san/xu.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/zhanghe.png" data-id="zhanghe"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#5"><img src="/src/img/san/zhanghe.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/zhangliao.png" data-id="zhangliao"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#6"><img src="/src/img/san/zhangliao.png"/></a>
             </div>
-            <div class="grid-item">
-                <img src="/src/img/san/zhao.png" data-id="zhaoyun"/>
+            <div class="grid-item" ng-click="getInfo()">
+                <a href="#7"><img src="/src/img/san/zhao.png"/></a>
             </div>
         </div>
-        <div class="san-display" style="display: none" ng-app="MyBlog" ng-controller="sanCtrl">
+        <div class="san-display" ng-show="toggle_info">
             <div class="display-header">
-                <span class="glyphicon glyphicon-home"></span>
+                <span class="glyphicon glyphicon-home" ng-click="show_hide()"></span>
+                <span class="glyphicon glyphicon-arrow-left" ng-click="prev()"></span>
+                <span class="glyphicon glyphicon-arrow-right" ng-click="next()"></span>
             </div>
-            <div class="bref-introduction" ng-bind="item.name">
-                <span ng-bind="item.nameZi"></span>
+            <div class="display-img">
+                <img src="{{ 'item.img' | angular}}"/>
+            </div>
+            <div class="bref-introduction">
+                {{ 'item.name' | angular}} <span ng-bind="item.nameZi"></span>
             </div>
             <div class="info-introduction">
                 <span class="span-romance">【演】</span><p class="romance" ng-bind="item.romance"></p>
