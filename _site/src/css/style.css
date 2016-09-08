@@ -427,6 +427,10 @@ p.img-title {
 
 /* ---- .grid-item ---- */
 
+.grid{
+    height: 585px;
+}
+
 #san-container .grid-sizer,
 #san-container .grid-item {
     width: 25%;

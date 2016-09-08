@@ -209,5 +209,22 @@
     });
 })();
 
+// (function (){
+//     $(".grid.item img").on("load", function (){
+//        $(".grid").css("height", "auto");
+//     });
+// })();
+(function (){
+    var defereds = [];
+    $(".grid.item img").each(function() {
+        var dfd = $.Deferred();
+        $(this).load(dfd.resolve);
+        defereds.push(dfd);
+    });
+    $.when.apply(null, defereds).done(function() {
+        $(".grid").css("height", "auto");
+    });
+})();
+
 
 

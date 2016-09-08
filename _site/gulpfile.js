@@ -39,6 +39,6 @@ gulp.task('watch', ['minify-js', 'minify-css', 'sass', 'concat-js'], function ()
     gulp.watch('./src/sass/**/*.scss', ['sass']);
     gulp.watch('./src/css/**/*.css', ['minify-css']);
     gulp.watch('./src/js/**/*.js', ['minify-js']);
-    gulp.watch('./src/js-min/js/*.js', ['concat-js']);
+    gulp.watch('./src/js-min/*.js', ['concat-js']);
 });
 

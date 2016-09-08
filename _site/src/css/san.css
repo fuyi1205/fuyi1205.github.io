@@ -24,11 +24,10 @@
         left: 9rem; }
     #san-container .san-display .bref-introduction {
       text-align: center;
-      font-family: Qiti, sans-serif;
+      font-family: 'Microsoft YaHei', sans-serif;
       height: 4rem;
       padding-top: 1rem;
       font-size: 3rem;
-      font-weight: bold;
       line-height: 4rem; }
       #san-container .san-display .bref-introduction span {
         font-size: 2rem;
