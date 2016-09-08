@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16464a1c-c2ed-46b5-8986-949418a03ef2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/caocao.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/guanyu.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/liubei.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/lvbu.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/xushu.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/zhanghe.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/zhangliao.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/dist/img/san/face/zhaoyun.PNG" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/caocao.PNG" afterPath="$PROJECT_DIR$/dist/img/face/caocao.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/guanyu.PNG" afterPath="$PROJECT_DIR$/dist/img/face/guanyu.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/liubei.PNG" afterPath="$PROJECT_DIR$/dist/img/face/liubei.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/lvbu.PNG" afterPath="$PROJECT_DIR$/dist/img/face/lvbu.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/xushu.PNG" afterPath="$PROJECT_DIR$/dist/img/face/xushu.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/zhanghe.PNG" afterPath="$PROJECT_DIR$/dist/img/face/zhanghe.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/zhangliao.PNG" afterPath="$PROJECT_DIR$/dist/img/face/zhangliao.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/img/san/face/zhaoyun.PNG" afterPath="$PROJECT_DIR$/dist/img/face/zhaoyun.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/dist/js/blog.js" afterPath="$PROJECT_DIR$/_site/dist/js/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/js-min/sanCtrl.js" afterPath="$PROJECT_DIR$/_site/src/js-min/sanCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/js/sanCtrl.js" afterPath="$PROJECT_DIR$/_site/src/js/sanCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/blog.js" afterPath="$PROJECT_DIR$/dist/js/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/san/index.html" afterPath="$PROJECT_DIR$/san/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/dist/json/san.json" afterPath="$PROJECT_DIR$/_site/dist/json/san.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/json/san.json" afterPath="$PROJECT_DIR$/dist/json/san.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/sanCtrl.js" afterPath="$PROJECT_DIR$/src/js/sanCtrl.js" />
     </list>
     <ignored path="blog.iws" />
@@ -43,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/san/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -66,7 +79,7 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
+            <state relative-caret-position="387">
               <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
               <folding />
             </state>
@@ -93,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sanCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sanCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/sanCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="220">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -140,7 +153,6 @@
         <option value="$PROJECT_DIR$/src/javascript/sanCtrl.js" />
         <option value="$PROJECT_DIR$/_site/index.html" />
         <option value="$PROJECT_DIR$/_posts/2016-5-30-getElementPosition.html" />
-        <option value="$PROJECT_DIR$/dist/json/san.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/json/san.json" />
         <option value="$PROJECT_DIR$/tank/index.html" />
@@ -155,8 +167,9 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/src/sass/san.scss" />
-        <option value="$PROJECT_DIR$/src/js/sanCtrl.js" />
         <option value="$PROJECT_DIR$/san/index.html" />
+        <option value="$PROJECT_DIR$/dist/json/san.json" />
+        <option value="$PROJECT_DIR$/src/js/sanCtrl.js" />
       </list>
     </option>
   </component>
@@ -226,21 +239,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="san" />
+              <option name="myItemId" value="json" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -255,24 +258,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,19 +277,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\fuyi\Desktop\blog" />
-      <recent name="C:\Users\fuyi\Desktop\blog\dist\css" />
-      <recent name="C:\Users\fuyi\Desktop\blog\src\json" />
-      <recent name="C:\Users\fuyi\Desktop\blog\dist\javascript" />
-      <recent name="C:\Users\fuyi\Desktop\blog\gitignore" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\fuyi\Desktop\blog\dist" />
       <recent name="C:\Users\fuyi\Desktop\blog\_posts" />
       <recent name="C:\Users\fuyi\Desktop\blog\src" />
       <recent name="C:\Users\fuyi\Desktop\blog\src\sass" />
       <recent name="C:\Users\fuyi\Desktop\blog\src\javascript" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fuyi\Desktop\blog\dist\img" />
+      <recent name="C:\Users\fuyi\Desktop\blog\dist\img\san" />
+      <recent name="C:\Users\fuyi\Desktop\blog" />
+      <recent name="C:\Users\fuyi\Desktop\blog\dist\css" />
+      <recent name="C:\Users\fuyi\Desktop\blog\src\json" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.test.js">
@@ -397,24 +382,25 @@
       <workItem from="1473165404507" duration="5659000" />
       <workItem from="1473209997363" duration="6904000" />
       <workItem from="1473231945546" duration="15771000" />
-      <workItem from="1473316362021" duration="4331000" />
+      <workItem from="1473316362021" duration="6989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88387000" />
+    <option name="totallyTimeSpent" value="91045000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17261904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36196318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36196318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -422,7 +408,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -547,6 +532,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -576,6 +562,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -621,6 +608,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,13 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1237" selection-start-line="0" selection-start-column="1221" selection-end-line="0" selection-end-column="1237" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/json/san.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-546">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -741,14 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/sanCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -767,16 +740,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
+        <state relative-caret-position="387">
           <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/json/san.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-992">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/san/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/sanCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding />
         </state>
       </provider>
