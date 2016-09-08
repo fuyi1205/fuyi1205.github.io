@@ -3,21 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="16464a1c-c2ed-46b5-8986-949418a03ef2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/dist/css/san.css" afterPath="$PROJECT_DIR$/_site/dist/css/san.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/dist/css/style.css" afterPath="$PROJECT_DIR$/_site/dist/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/dist/js/blog.js" afterPath="$PROJECT_DIR$/_site/dist/js/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/gulpfile.js" afterPath="$PROJECT_DIR$/_site/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/css/san.css" afterPath="$PROJECT_DIR$/_site/src/css/san.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/css/style.css" afterPath="$PROJECT_DIR$/_site/src/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/js-min/index.js" afterPath="$PROJECT_DIR$/_site/src/js-min/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/js/index.js" afterPath="$PROJECT_DIR$/_site/src/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/sass/san.scss" afterPath="$PROJECT_DIR$/_site/src/sass/san.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/san.css" afterPath="$PROJECT_DIR$/dist/css/san.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.css" afterPath="$PROJECT_DIR$/dist/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/js-min/sanCtrl.js" afterPath="$PROJECT_DIR$/_site/src/js-min/sanCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/src/js/sanCtrl.js" afterPath="$PROJECT_DIR$/_site/src/js/sanCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/blog.js" afterPath="$PROJECT_DIR$/dist/js/blog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/san.scss" afterPath="$PROJECT_DIR$/src/sass/san.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/san/index.html" afterPath="$PROJECT_DIR$/san/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/sanCtrl.js" afterPath="$PROJECT_DIR$/src/js/sanCtrl.js" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,16 +29,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="san.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="san.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/san.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="-631">
               <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
               <folding>
                 <element signature="e#152#640#0" expanded="false" />
                 <element signature="e#966#1201#0" expanded="false" />
                 <element signature="e#1220#1290#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/san/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,7 +66,7 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="690">
               <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
               <folding />
             </state>
@@ -87,6 +88,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="1" column="23" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sanCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/sanCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -131,11 +142,9 @@
         <option value="$PROJECT_DIR$/_posts/2016-5-30-getElementPosition.html" />
         <option value="$PROJECT_DIR$/dist/json/san.json" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/san/index.html" />
         <option value="$PROJECT_DIR$/src/json/san.json" />
         <option value="$PROJECT_DIR$/tank/index.html" />
         <option value="$PROJECT_DIR$/dist/css/style.css" />
-        <option value="$PROJECT_DIR$/src/js/sanCtrl.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
@@ -146,6 +155,8 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/src/sass/san.scss" />
+        <option value="$PROJECT_DIR$/src/js/sanCtrl.js" />
+        <option value="$PROJECT_DIR$/san/index.html" />
       </list>
     </option>
   </component>
@@ -218,10 +229,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -233,7 +240,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="san" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,12 +397,12 @@
       <workItem from="1473165404507" duration="5659000" />
       <workItem from="1473209997363" duration="6904000" />
       <workItem from="1473231945546" duration="15771000" />
-      <workItem from="1473316362021" duration="3494000" />
+      <workItem from="1473316362021" duration="4331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87550000" />
+    <option name="totallyTimeSpent" value="88387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -576,6 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -673,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/sanCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -721,22 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/san/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -745,10 +729,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/src/sass/san.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        <state relative-caret-position="-631">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding>
+            <element signature="e#152#640#0" expanded="false" />
+            <element signature="e#966#1201#0" expanded="false" />
+            <element signature="e#1220#1290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/sanCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -761,15 +757,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/san.scss">
+    <entry file="file://$PROJECT_DIR$/dist/js/blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding>
-            <element signature="e#152#640#0" expanded="false" />
-            <element signature="e#966#1201#0" expanded="false" />
-            <element signature="e#1220#1290#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/san/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

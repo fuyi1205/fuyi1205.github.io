@@ -3,6 +3,11 @@
  */
 /*使用angular带来了代码的极大简化与清晰*/
 var myAngular = angular.module("MyBlog",[]);
+myAngular.config([
+    '$interpolateProvider', function($interpolateProvider) {
+        return $interpolateProvider.startSymbol('{(').endSymbol(')}');
+    }
+]);
 myAngular.controller("sanCtrl", ['$scope', '$http', function ($scope, $http){
     $scope.toggle_img = true;
     $scope.getInfo = function (){

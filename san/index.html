@@ -37,10 +37,10 @@ layout: page
                 <span class="glyphicon glyphicon-arrow-right" ng-click="next()"></span>
             </div>
             <div class="display-img">
-                <img src="{{ 'item.img' | angular}}"/>
+                <img src="{( item.img )}"/>
             </div>
             <div class="bref-introduction">
-                {{ 'item.name' | angular}} <span ng-bind="item.nameZi"></span>
+                {( item.name )} <span ng-bind="item.nameZi"></span>
             </div>
             <div class="info-introduction">
                 <span class="span-romance">【演】</span><p class="romance" ng-bind="item.romance"></p>
