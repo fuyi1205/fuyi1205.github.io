@@ -209,11 +209,6 @@
     });
 })();
 
-// (function (){
-//     $(".grid.item img").on("load", function (){
-//        $(".grid").css("height", "auto");
-//     });
-// })();
 (function (){
     var defereds = [];
     $(".grid.item img").each(function() {
@@ -223,6 +218,7 @@
     });
     $.when.apply(null, defereds).done(function() {
         $(".grid").css("height", "auto");
+        console.log("done!");
     });
 })();
 
