@@ -197,19 +197,19 @@
     }
 })();
 
-//图片加载后样式变化
-(function (){
-    var defereds = [];
-    $(".grid.item img").each(function() {
-        var dfd = $.Deferred();
-        $(this).load(dfd.resolve);
-        defereds.push(dfd);
-    });
-    $.when.apply(null, defereds).done(function() {
-        $(".grid").css("height", "auto");
-        console.log("done!");
-    });
-})();
+// //图片加载后样式变化
+// (function (){
+//     var defereds = [];
+//     $(".grid.item img").each(function() {
+//         var dfd = $.Deferred();
+//         $(this).load(dfd.resolve);
+//         defereds.push(dfd);
+//     });
+//     $.when.apply(null, defereds).done(function() {
+//         $(".grid").css("height", "auto");
+//         console.log("done!");
+//     });
+// })();
 
 //登录模块控制
 (function (){

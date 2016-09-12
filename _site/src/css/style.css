@@ -432,7 +432,7 @@ p.img-title {
 /* ---- .grid-item ---- */
 
 .grid{
-    height: 585px;
+    min-height: 585px;
 }
 
 #san-container .grid-sizer,
