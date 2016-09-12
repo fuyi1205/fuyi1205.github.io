@@ -197,18 +197,7 @@
     }
 })();
 
-//登录注册模块，学习使用IndexedDB
-(function (){
-    var form = $(".log_form");
-    $(document).on("click", ".register", function (){
-        form.fadeToggle();
-        $("#log_in").hide();
-    }).on('click', ".loginIn", function (){
-        form.fadeToggle();
-        $("#log_in").show();
-    });
-})();
-
+//图片加载后样式变化
 (function (){
     var defereds = [];
     $(".grid.item img").each(function() {
@@ -219,6 +208,16 @@
     $.when.apply(null, defereds).done(function() {
         $(".grid").css("height", "auto");
         console.log("done!");
+    });
+})();
+
+//登录模块控制
+(function (){
+    $(document).on("click", "#register-login-btn", function (){
+        $(".log-form").toggle();
+        $(".bg-con").toggleClass("bg-con-opac");
+    }).on("click", ".shut-login", function (){
+        $(".log-form").hide();
     });
 })();
 

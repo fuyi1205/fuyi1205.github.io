@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog fuyi frontend">
+    <meta name="description" content="the first time to write a blog based on jekyll and angular, it is a simple one but still very important">
     <title>Blog of Mr.fu</title>
     <link rel="icon" href="/dist/img/favicon.ico"/>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
@@ -10,10 +12,9 @@
     <link rel="stylesheet" href="/dist/css/san.css"/>
 </head>
 
-<body>
-{% include form.html %}
+<body ng-app="MyBlog">
 {% include header.html %}
-<div id="index-container" class="container-fluid">
+<div id="index-container" class="container-fluid bg-con">
     {{ content }}
 </div>
 {% include footer.html %}

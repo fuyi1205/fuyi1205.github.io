@@ -12,6 +12,10 @@ body {
     font-family: "Microsoft YaHei", sans-serif;
 }
 
+.bg-con-opac{
+    opacity: 0.4;
+}
+
 .view-phone {
     display: none;
     margin-bottom: 0;

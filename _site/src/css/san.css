@@ -46,54 +46,61 @@
       height: 240px;
       margin: 0 auto; }
 
-.log_form {
+.log-form {
   display: none;
   position: fixed;
-  top: 150px;
+  top: 16rem;
   left: 50%;
-  width: 300px;
+  width: 250px;
   margin-left: -150px;
   background: #fff;
   border: none;
   z-index: 10;
   text-align: center; }
-  .log_form .form-group {
-    text-align: left;
-    position: relative; }
-    .log_form .form-group input {
-      display: block;
-      width: 80%;
-      outline: none;
-      border: none;
-      background-color: transparent;
-      box-shadow: none;
-      border-bottom: 2px solid #000;
-      border-radius: 0; }
-      .log_form .form-group input:focus {
-        animation: log 1s ease-in-out forwards; }
+  .log-form .panel-body {
+    padding: 3rem 1.5rem; }
+    .log-form .panel-body .form-group {
+      font-size: 1.5rem;
+      text-align: left;
+      margin-bottom: 2rem; }
+      .log-form .panel-body .form-group input {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: 2px solid #000;
+        border-radius: 0; }
+        .log-form .panel-body .form-group input:focus {
+          animation: log 1s ease-in-out forwards; }
+          .log-form .panel-body .form-group input:focus label {
+            color: red; }
 
 @keyframes log {
   0% {
-    width: 80%;
-    padding: 0; }
-  50% {
     width: 100%;
-    padding: 0; }
+    border-bottom: 4px solid #337ab7; }
+  50% {
+    padding: 0.5rem 0.5rem 0.5rem 0; }
   100% {
     width: 100%;
-    padding: 5px 5px 5px 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
     border-bottom: 4px solid #337ab7; } }
-    .log_form .form-group .glyphicon {
-      display: none;
-      position: absolute;
-      top: 30px;
-      right: 0;
-      margin-top: 1rem; }
-    .log_form .form-group .glyphicon-remove {
-      color: red; }
-
-.test-red {
-  color: red; }
-
-.test-blue {
-  color: blue; }
+      .log-form .panel-body .form-group .glyphicon {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin-top: 1rem; }
+      .log-form .panel-body .form-group .glyphicon-remove {
+        color: red; }
+  .log-form .shut-login {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer; }
+    .log-form .shut-login:hover {
+      color: #000; }
