@@ -11,7 +11,7 @@ myAngular.config([
 myAngular.controller("sanCtrl", ['$scope', '$http', function ($scope, $http){
     $scope.toggle_img = true;
     $scope.getInfo = function (){
-        $http.get("/dist/json/san.json").success(function (response){
+        $http.get("/dist/json/s11.json").success(function (response){
             var index = window.location.href.substr(-1, 1);
             $scope.info = response;
             $scope.item = $scope.info[index];

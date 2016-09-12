@@ -93,28 +93,28 @@
         <div class="grid" ng-show="toggle_img">
             <div class="grid-sizer"></div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#0"><img src="/dist/img/san/cao.png"/></a>
+                <a href="#0"><img src="/dist/img/san/cao.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#1"><img src="/dist/img/san/liu.png"/></a>
+                <a href="#1"><img src="/dist/img/san/liu.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#2"><img src="/dist/img/san/guan.png"/></a>
+                <a href="#2"><img src="/dist/img/san/guan.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#3"><img src="/dist/img/san/lv.png"/></a>
+                <a href="#3"><img src="/dist/img/san/lv.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#4"><img src="/dist/img/san/xu.png"/></a>
+                <a href="#4"><img src="/dist/img/san/xu.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#5"><img src="/dist/img/san/zhanghe.png"/></a>
+                <a href="#5"><img src="/dist/img/san/zhanghe.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#6"><img src="/dist/img/san/zhangliao.png"/></a>
+                <a href="#6"><img src="/dist/img/san/zhangliao.png" alt="{( item.name )}"/></a>
             </div>
             <div class="grid-item" ng-click="getInfo()">
-                <a href="#7"><img src="/dist/img/san/zhao.png"/></a>
+                <a href="#7"><img src="/dist/img/san/zhao.png" alt="{( item.name )}"/></a>
             </div>
         </div>
         <div class="san-display" ng-show="toggle_info">
@@ -124,7 +124,7 @@
                 <span class="glyphicon glyphicon-arrow-right" ng-click="next()"></span>
             </div>
             <div class="display-img">
-                <img src="{( item.img )}"/>
+                <img src="{( item.img )}" alt="{( item.name )}"/>
             </div>
             <div class="bref-introduction">
                 {( item.name )} <span ng-bind="item.nameZi"></span>
