@@ -68,7 +68,7 @@
 .log-form {
   display: none;
   position: fixed;
-  top: 16rem;
+  top: 10rem;
   left: 50%;
   width: 250px;
   margin-left: -150px;
@@ -83,7 +83,7 @@
       font-size: 1.5rem;
       text-align: left;
       margin-bottom: 2rem;
-      input {
+      input.input1 {
         display: block;
         width: 100%;
         outline: none;
@@ -109,6 +109,12 @@
             border-bottom: 4px solid #337ab7;
           }
         }
+      }
+
+      input.checkbox{
+        width: auto;
+        height: auto;
+        display: inline;
       }
       .glyphicon {
         //display: none;
