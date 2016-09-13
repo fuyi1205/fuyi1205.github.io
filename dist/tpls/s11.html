@@ -1,0 +1,17 @@
+<div class="san-display" ng-show="toggle_info">
+    <div class="display-header">
+        <span class="glyphicon glyphicon-home" ng-click="show_hide()"></span>
+        <span class="glyphicon glyphicon-arrow-left" ng-click="prev()"></span>
+        <span class="glyphicon glyphicon-arrow-right" ng-click="next()"></span>
+    </div>
+    <div class="display-img">
+        <img src="{( item.img )}" alt="{( item.name )}"/>
+    </div>
+    <div class="bref-introduction">
+        {( item.name )} <span ng-bind="item.nameZi"></span>
+    </div>
+    <div class="info-introduction">
+        <span class="span-romance">【演】</span><p class="romance" ng-bind="item.romance"></p>
+        <span class="span-history">【史】</span><p class="history" ng-bind="item.history"></p>
+    </div>
+</div>

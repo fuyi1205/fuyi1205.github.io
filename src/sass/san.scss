@@ -79,6 +79,7 @@
   .panel-body{
     padding: 3rem 1.5rem;
     .form-group {
+      position: relative;
       font-size: 1.5rem;
       text-align: left;
       margin-bottom: 2rem;
@@ -92,12 +93,9 @@
         border-bottom: 2px solid #000;
         border-radius: 0;
         &:focus {
-          animation: log 1s ease-in-out forwards;
-          label{
-            color: red;
-          }
+          animation: inputChange 1s ease-in-out forwards;
         }
-        @keyframes log {
+        @keyframes inputChange {
           0% {
             width: 100%;
             border-bottom: 4px solid #337ab7;
@@ -113,11 +111,10 @@
         }
       }
       .glyphicon {
-        display: none;
+        //display: none;
         position: absolute;
-        top: 30px;
+        //top: 30px;
         right: 0;
-        margin-top: 1rem;
       }
       .glyphicon-remove {
         color: red;

@@ -3,26 +3,27 @@
  */
 /*使用angular带来了代码的极大简化与清晰*/
 var myAngular = angular.module("MyBlog",[]);
+
 myAngular.config([
     '$interpolateProvider', function($interpolateProvider) {
         return $interpolateProvider.startSymbol('{(').endSymbol(')}');
     }
 ]);
+
 myAngular.controller("sanCtrl", ['$scope', '$http', function ($scope, $http){
-    $scope.toggle_img = true;
     $scope.getInfo = function (){
         $http.get("/dist/json/s11.json").success(function (response){
             var index = window.location.href.substr(-1, 1);
             $scope.info = response;
             $scope.item = $scope.info[index];
-            $scope.toggle_img = false;
-            $scope.toggle_info = true;
+            $scope.toggle_img = !$scope.toggle_img;
+            $scope.toggle_info = !$scope.toggle_info;
         });
     };
 
     $scope.show_hide = function (){
-        $scope.toggle_img = true;
-        $scope.toggle_info = false;
+        $scope.toggle_img = !$scope.toggle_img;
+        $scope.toggle_info = !$scope.toggle_info;
     };
 
     
@@ -38,6 +39,21 @@ myAngular.controller("sanCtrl", ['$scope', '$http', function ($scope, $http){
         $scope.item = $scope.info[index];
     };
 }]);
+
+myAngular.controller("loginCtrl", ["$scope", function ($scope){
+    $scope.save = function (){
+        alert("该模块尚未开放，敬请期待！");
+    };
+}]);
+
+myAngular.directive("s11", function (){
+   return {
+       restrict: 'E',
+       templateUrl: '../dist/tpls/s11.html'
+   }
+});
+
+
 
 
 

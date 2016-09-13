@@ -214,10 +214,11 @@
 //登录模块控制
 (function (){
     $(document).on("click", "#register-login-btn", function (){
-        $(".log-form").toggle();
+        $(".log-form").fadeToggle();
         $(".bg-con").toggleClass("bg-con-opac");
     }).on("click", ".shut-login", function (){
-        $(".log-form").hide();
+        $(".log-form").fadeOut();
+        $(".bg-con").removeClass("bg-con-opac");
     });
 })();
 
