@@ -2,7 +2,7 @@
  * Created by fuyi on 2016/7/24.
  */
 /*使用angular带来了代码的极大简化与清晰*/
-var myAngular = angular.module("MyBlog",[]);
+var myAngular = angular.module("MyBlog",['ngAnimate']);
 
 myAngular.config([
     '$interpolateProvider', function($interpolateProvider) {
@@ -41,9 +41,19 @@ myAngular.controller("sanCtrl", ['$scope', '$http', function ($scope, $http){
 }]);
 
 myAngular.controller("loginCtrl", ["$scope", function ($scope){
-    $scope.save = function (){
+    $scope.registedInfo = "已有帐号，直接登陆";
+    $scope.login = function (){
         alert("该模块尚未开放，敬请期待！");
     };
+
+    $scope.registed = function (){
+        $scope.ifRegisted = !$scope.ifRegisted;
+        if($scope.registedInfo == "已有帐号，直接登陆"){
+            $scope.registedInfo = "突然又想注册一个帐号";
+        }else{
+            $scope.registedInfo = "已有帐号，直接登陆";
+        }
+    }
 }]);
 
 myAngular.directive("s11", function (){

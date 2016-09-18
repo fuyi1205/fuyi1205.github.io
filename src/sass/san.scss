@@ -61,7 +61,21 @@
       width: 240px;
       height: 240px;
       margin: 0 auto;
+      @media screen and (max-width: 768px){
+        margin-top: 4rem;
+      }
     }
+  }
+}
+
+#registed{
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  &:hover{
+    color: #337ab7;
   }
 }
 
@@ -70,14 +84,17 @@
   position: fixed;
   top: 10rem;
   left: 50%;
-  width: 250px;
+  width: 300px;
   margin-left: -150px;
   background: #fff;
   border: none;
   z-index: 10;
   text-align: center;
+  .ng-hide-remove{
+    color: red;
+  }
   .panel-body{
-    padding: 3rem 1.5rem;
+    //padding: 3rem 1.5rem;
     .form-group {
       position: relative;
       font-size: 1.5rem;

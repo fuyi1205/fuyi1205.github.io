@@ -127,7 +127,7 @@
         article.find(".con-title, .con-date").hide();
         article.find(".con-content").find("*").not("h3").hide();
         //日期格式改变
-        for (var item in date.get()) {
+        for (var item = 0, len = date.length; item < len; item ++) {
             date.eq(item).text(date.eq(item).text().substring(0, 10));
         }
         //切换缩略图与信息图
@@ -215,10 +215,22 @@
 (function (){
     $(document).on("click", "#register-login-btn", function (){
         $(".log-form").fadeToggle();
-        $(".bg-con").toggleClass("bg-con-opac");
     }).on("click", ".shut-login", function (){
         $(".log-form").fadeOut();
-        $(".bg-con").removeClass("bg-con-opac");
+    });
+})();
+
+//canvas时间模块控制
+(function (){
+    if(window.location.pathname == "/"){
+        $("#canvas-clock").fadeIn();
+    }
+    canvasClock.run();
+    $(document).on("click", "#toggle-canvas-clock", function (){
+        $("#canvas-clock").fadeToggle();
+        if(window.location.pathname !== "/"){
+            $(".bg-con").toggleClass("bg-con-opac");
+        }
     });
 })();
 
