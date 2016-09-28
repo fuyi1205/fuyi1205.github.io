@@ -2,12 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16464a1c-c2ed-46b5-8986-949418a03ef2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/bgIndex.jpg" afterPath="$PROJECT_DIR$/src/img/bgIndex.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/cao.png" afterPath="$PROJECT_DIR$/src/img/san/cao.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/guan.png" afterPath="$PROJECT_DIR$/src/img/san/guan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/liu.png" afterPath="$PROJECT_DIR$/src/img/san/liu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/lv.png" afterPath="$PROJECT_DIR$/src/img/san/lv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/xu.png" afterPath="$PROJECT_DIR$/src/img/san/xu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/zhang.png" afterPath="$PROJECT_DIR$/src/img/san/zhang.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/zhanghe.png" afterPath="$PROJECT_DIR$/src/img/san/zhanghe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/zhangliao.png" afterPath="$PROJECT_DIR$/src/img/san/zhangliao.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/zhao.png" afterPath="$PROJECT_DIR$/src/img/san/zhao.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/san/zhu.png" afterPath="$PROJECT_DIR$/src/img/san/zhu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blog.iml" afterPath="$PROJECT_DIR$/.idea/blog.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/blog.min.css" afterPath="$PROJECT_DIR$/dist/css/blog.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/blog.min.js" afterPath="$PROJECT_DIR$/dist/js/blog.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/san.scss" afterPath="$PROJECT_DIR$/src/sass/san.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/bin-version-check" afterPath="$PROJECT_DIR$/node_modules/.bin/bin-version-check" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/cleancss" afterPath="$PROJECT_DIR$/node_modules/.bin/cleancss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/csso" afterPath="$PROJECT_DIR$/node_modules/.bin/csso" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/dateformat" afterPath="$PROJECT_DIR$/node_modules/.bin/dateformat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/executable" afterPath="$PROJECT_DIR$/node_modules/.bin/executable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/find-versions" afterPath="$PROJECT_DIR$/node_modules/.bin/find-versions" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/gifsicle" afterPath="$PROJECT_DIR$/node_modules/.bin/gifsicle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/gulp" afterPath="$PROJECT_DIR$/node_modules/.bin/gulp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/har-validator" afterPath="$PROJECT_DIR$/node_modules/.bin/har-validator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/in-install" afterPath="$PROJECT_DIR$/node_modules/.bin/in-install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/in-publish" afterPath="$PROJECT_DIR$/node_modules/.bin/in-publish" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/jpegtran" afterPath="$PROJECT_DIR$/node_modules/.bin/jpegtran" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/lpad-align" afterPath="$PROJECT_DIR$/node_modules/.bin/lpad-align" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/node-gyp" afterPath="$PROJECT_DIR$/node_modules/.bin/node-gyp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/node-sass" afterPath="$PROJECT_DIR$/node_modules/.bin/node-sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/nopt" afterPath="$PROJECT_DIR$/node_modules/.bin/nopt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/not-in-install" afterPath="$PROJECT_DIR$/node_modules/.bin/not-in-install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/not-in-publish" afterPath="$PROJECT_DIR$/node_modules/.bin/not-in-publish" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/optipng" afterPath="$PROJECT_DIR$/node_modules/.bin/optipng" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/pngquant" afterPath="$PROJECT_DIR$/node_modules/.bin/pngquant" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/pretty-bytes" afterPath="$PROJECT_DIR$/node_modules/.bin/pretty-bytes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/rc" afterPath="$PROJECT_DIR$/node_modules/.bin/rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sassgraph" afterPath="$PROJECT_DIR$/node_modules/.bin/sassgraph" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/seek-bunzip" afterPath="$PROJECT_DIR$/node_modules/.bin/seek-bunzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/seek-table" afterPath="$PROJECT_DIR$/node_modules/.bin/seek-table" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/strip-dirs" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-dirs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/strip-indent" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-indent" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/strip-json-comments" afterPath="$PROJECT_DIR$/node_modules/.bin/strip-json-comments" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/svgo" afterPath="$PROJECT_DIR$/node_modules/.bin/svgo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/user-home" afterPath="$PROJECT_DIR$/node_modules/.bin/user-home" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/uuid" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/which" afterPath="$PROJECT_DIR$/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/window-size" afterPath="$PROJECT_DIR$/node_modules/.bin/window-size" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/semver-truncate/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/semver-truncate/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vinyl-fs/node_modules/.bin/strip-bom" afterPath="$PROJECT_DIR$/node_modules/vinyl-fs/node_modules/.bin/strip-bom" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,6 +72,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -26,113 +81,7 @@
     <favorites_list name="blog" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="san.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/san.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding>
-                <element signature="e#632#1120#0" expanded="false" />
-                <element signature="e#1446#1681#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1638">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2730">
-              <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mediaQuery.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/mediaQuery.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mediaQuery.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/mediaQuery.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="canvas-clock.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/canvas-clock.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding>
-                <marker date="1475027042212" expanded="true" signature="186:206" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tank.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/tank.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/article.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="canvas-clock.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sass/canvas-clock.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -169,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/json/san.json" />
         <option value="$PROJECT_DIR$/tank/index.html" />
         <option value="$PROJECT_DIR$/dist/css/style.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/2016-5-4-学习闭包.html" />
         <option value="$PROJECT_DIR$/dist/json/san.json" />
         <option value="$PROJECT_DIR$/_includes/form.html" />
@@ -200,23 +148,24 @@
         <option value="$PROJECT_DIR$/src/sass/san.scss" />
         <option value="$PROJECT_DIR$/src/sass/index.scss" />
         <option value="$PROJECT_DIR$/src/sass/canvas-clock.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/_site/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="21" />
-    <option name="width" value="1366" />
-    <option name="height" value="692" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -243,6 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,43 +225,9 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,22 +361,23 @@
       <workItem from="1474354987455" duration="889000" />
       <workItem from="1474981259982" duration="5412000" />
       <workItem from="1475027018770" duration="82000" />
+      <workItem from="1475030510010" duration="815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141733000" />
+    <option name="totallyTimeSpent" value="142548000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="21" width="1366" height="692" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15699404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15476191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40536013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34762633" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -531,13 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -742,23 +653,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/src/sass/canvas-clock.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/article.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/tank.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
+        <state relative-caret-position="463">
           <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+    <entry file="file://$PROJECT_DIR$/src/css/canvas-clock.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/css/mediaQuery.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -767,19 +702,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/canvas-clock.css">
+    <entry file="file://$PROJECT_DIR$/src/sass/mediaQuery.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <marker date="1475027042212" expanded="true" signature="186:206" ph="{...}" />
-          </folding>
+        <state relative-caret-position="463">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/san.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
+        <state relative-caret-position="363">
           <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
             <element signature="e#632#1120#0" expanded="false" />
@@ -788,42 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/index.scss">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="130" column="19" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/mediaQuery.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/article.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/canvas-clock.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
