@@ -1,3 +1,36 @@
+.grid{
+  min-height: 585px;
+}
+
+#san-container .grid-sizer,
+#san-container .grid-item {
+  width: 25%;
+}
+
+#san-container .grid-item-width33{
+  width: 33.3%;
+}
+
+#san-container .grid-item {
+  float: left;
+}
+
+#san-container .grid-item img {
+  display: block;
+  max-width: 100%;
+  margin: 0.5rem 0;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#san-container .grid-item img:hover {
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.page-container{
+  background: #f4f4f4;
+}
+
 #san-container {
   padding: 3rem 0;
   .container {
@@ -68,91 +101,4 @@
   }
 }
 
-#registed{
-  display: block;
-  padding-bottom: 0.5rem;
-  text-align: center;
-  line-height: 3rem;
-  cursor: pointer;
-  &:hover{
-    color: #337ab7;
-  }
-}
 
-.log-form {
-  display: none;
-  position: fixed;
-  top: 10rem;
-  left: 50%;
-  width: 300px;
-  margin-left: -150px;
-  background: #fff;
-  border: none;
-  z-index: 10;
-  text-align: center;
-  .ng-hide-remove{
-    color: red;
-  }
-  .panel-body{
-    //padding: 3rem 1.5rem;
-    .form-group {
-      position: relative;
-      font-size: 1.5rem;
-      text-align: left;
-      margin-bottom: 2rem;
-      input.input1 {
-        display: block;
-        width: 100%;
-        outline: none;
-        border: none;
-        background-color: transparent;
-        box-shadow: none;
-        border-bottom: 2px solid #000;
-        border-radius: 0;
-        &:focus {
-          animation: inputChange 1s ease-in-out forwards;
-        }
-        @keyframes inputChange {
-          0% {
-            width: 100%;
-            border-bottom: 4px solid #337ab7;
-          }
-          50% {
-            padding: 0.5rem 0.5rem 0.5rem 0;
-          }
-          100% {
-            width: 100%;
-            padding: 0.5rem 0.5rem 0.5rem 0;
-            border-bottom: 4px solid #337ab7;
-          }
-        }
-      }
-
-      input.checkbox{
-        width: auto;
-        height: auto;
-        display: inline;
-      }
-      .glyphicon {
-        //display: none;
-        position: absolute;
-        //top: 30px;
-        right: 0;
-      }
-      .glyphicon-remove {
-        color: red;
-      }
-    }
-  }
-  .shut-login{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    &:hover{
-      color: #000;
-    }
-  }
-}

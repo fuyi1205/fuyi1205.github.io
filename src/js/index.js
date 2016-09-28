@@ -155,7 +155,7 @@
                 if (search.key.val().length == 0) {
                     alert("请输入搜索内容！");
                 } else {
-                    for (var i = 0, length = search.titles.length; i < length; i++) {
+                    for (var i = 0, len = search.titles.length; i < len; i++) {
                         if (search.titles.eq(i).text().toLowerCase().indexOf(search.key.val().toLowerCase()) == -1) {
                             search.articles.eq(i).hide();
                         } else {
@@ -172,8 +172,8 @@
 
         $("#blog-search").delegate("#search-button", "click", function () {
             search.start();
-        }).delegate("input", "keydown", function () {
-            if (event.which == 13) {
+        }).delegate("input", "keydown", function (event) {
+            if (event.keyCode == 13) {
                 search.start();
             }
         }).delegate("#reset-button", "click", function () {
