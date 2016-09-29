@@ -1,0 +1,57 @@
+.blog-body {
+  background: #f4f4f4;
+  .container {
+    padding: 20px 40px;
+    background: #fff;
+    @media screen and (max-width: 768px) {
+      padding: 10px 15px;
+    }
+    > p {
+      font-size: 18px;
+      font-family: "Microsoft YaHei", Calibri, sans-serif;
+      text-align: center;
+    }
+  }
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .con-content {
+    margin: 30px 0;
+    font-size: 18px;
+    h3 {
+      font-size: 1.8rem;
+    }
+    p {
+      text-indent: 2rem;
+      text-align: justify;
+      white-space: normal;
+      word-break: break-all;
+      font-size: 1.5rem;
+    }
+    pre {
+      width: 100%;
+      font-size: 18px;
+      font-family: Calibri, sans-serif;
+      padding: 30px;
+      border: none;
+      @media screen and (max-width: 768px) {
+        padding: 2px;
+        font-size: 0.8rem;
+      }
+    }
+    .img-container {
+      margin: 30px 0;
+      img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+    p.img-title {
+      font-size: 14px;
+      text-align: center;
+      text-indent: 0;
+    }
+  }
+}

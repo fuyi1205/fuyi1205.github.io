@@ -1,0 +1,46 @@
+.blog-body {
+  background: #f4f4f4; }
+  .blog-body .container {
+    padding: 20px 40px;
+    background: #fff; }
+    @media screen and (max-width: 768px) {
+      .blog-body .container {
+        padding: 10px 15px; } }
+    .blog-body .container > p {
+      font-size: 18px;
+      font-family: "Microsoft YaHei", Calibri, sans-serif;
+      text-align: center; }
+  .blog-body h2 {
+    font-size: 25px;
+    text-align: center; }
+  .blog-body .con-content {
+    margin: 30px 0;
+    font-size: 18px; }
+    .blog-body .con-content h3 {
+      font-size: 1.8rem; }
+    .blog-body .con-content p {
+      text-indent: 2rem;
+      text-align: justify;
+      white-space: normal;
+      word-break: break-all;
+      font-size: 1.5rem; }
+    .blog-body .con-content pre {
+      width: 100%;
+      font-size: 18px;
+      font-family: Calibri, sans-serif;
+      padding: 30px;
+      border: none; }
+      @media screen and (max-width: 768px) {
+        .blog-body .con-content pre {
+          padding: 2px;
+          font-size: 0.8rem; } }
+    .blog-body .con-content .img-container {
+      margin: 30px 0; }
+      .blog-body .con-content .img-container img {
+        display: block;
+        width: 50%;
+        margin: 0 auto; }
+    .blog-body .con-content p.img-title {
+      font-size: 14px;
+      text-align: center;
+      text-indent: 0; }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog fuyi frontend">
+    <meta name="description" content="the first time to write a blog based on jekyll and angular, it is a simple one but still very important">
+    <title>Blog of Mr.fu</title>
+    <link rel="icon" href="/dist/img/favicon.ico"/>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/blog.min.css"/>
+</head>
+
+<body ng-app="MyBlog">
+<header ng-controller="loginCtrl">
+    <nav class="navbar navbar-inverse view-desktop">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Blog of FXY</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active" id="home-page"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle dropdown-desktop" data-toggle="dropdown" href="/blog/">我的博文</a>
+                    <ul class="dropdown-menu">
+                        <li id="show-info"><a href="#">摘要</a></li>
+                        <li id="hide-info"><a href="#">简略</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle dropdown-desktop" data-toggle="dropdown" href="/tank/">坦克世界</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./tank/">精英</a></li>
+                        <li><a href="http://182.18.61.50/search.html">战力</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle dropdown-desktop" data-toggle="dropdown" href="/san/">三国志</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/">人物</a></li>
+                        <li><a href="/">历史</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="toggle-canvas-clock" class="log"><span class="glyphicon glyphicon-time"></span> 时间</li>
+                <li id="register-login-btn" class="log"><span class="glyphicon glyphicon-user"></span> 登录/注册</li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar view-phone">
+        <div class="container-fluid">
+            <div class="col-xs-10">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Blog of FXY</a>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="dropdown">
+                    <span class="dropdown-toggle glyphicon glyphicon-th-list" data-toggle="dropdown"></span>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="/blog/">我的博文</a></li>
+                        <li><a href="/tank/">坦克世界</a></li>
+                        <li><a href="/san/">三国志</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="panel panel-primary log-form">
+        <div class="panel-heading">
+            <div class="panel-title">Welcome</div>
+        </div>
+        <div class="panel-body">
+            <span id="registed" ng-click="registed()" ng-bind="registedInfo"></span>
+            <form role="form" name="loginForm" ng-submit="login()" novalidate>
+                <div class="form-group has-feedback">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" class="form-control input1" name="username" placeholder="请输入至少4位的用户名" required ng-minlength="4" ng-model="username">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="loginForm.username.$valid"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label for="pwd">密码:</label>
+                    <!--爬过一个小坑，注意一定要设置ng-model，只有这样在loginForm.pwd中才能获取到相应的值，表单检验才是有效的-->
+                    <input type="password" id="pwd" class="form-control input1" name="pwd" placeholder="请输入至少8位的密码" required ng-minlength="8" ng-model="pwd">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="loginForm.pwd.$valid && loginForm.pwd.$dirty"></span>
+                </div>
+                <div class="form-group  has-feedback" ng-hide="ifRegisted">
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" class="form-control input1" name="email" placeholder="请输入如haha@hehe.com" required ng-model="email">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="loginForm.email.$valid && loginForm.email.$dirty"></span>
+                </div>
+                <div class="form-group  has-feedback" ng-hide="ifRegisted">
+                    <label for="agree"><a href="https://www.baidu.com/duty/">同意本博客的霸王条款</a></label>
+                    <input type="checkbox" id="agree" class="form-control checkbox" name="agree" required ng-model="agree">
+                </div>
+                <button type="submit" class="btn btn-primary" name="login" ng-disabled="loginForm.$invalid || loginForm.$indirty">登录</button>
+                <button type="submit" class="btn btn-default" name="register" ng-disabled="loginForm.$invalid || loginForm.$indirty" ng-hide="ifRegisted">注册</button>
+                <button type="submit" name="reset" class="btn btn-danger"> 重置</button>
+            </form>
+        </div>
+        <span class="glyphicon glyphicon-remove shut-login"></span>
+    </section>
+    <section id="canvas-clock" draggable="true">
+        <canvas id="drawing" width="200px" height="200px" draggable="true"></canvas>
+    </section>
+</header>
+<div id="index-container" class="container-fluid bg-con">
+    <section id="index-contact">
+    <h3>联系作者</h3>
+    <div class="row">
+        <div class="col-sm-6 col-xs-4">
+            <ul id="icon-contact">
+                <li style="background: url('/dist/img/icon/weixin.png') no-repeat;background-size: 100%"></li>
+                <li style="background: url('/dist/img/icon/weibo.png') no-repeat;background-size: 100%"></li>
+                <li style="background: url('/dist/img/icon/qq.png') no-repeat;background-size: 100%"></li>
+                <li style="background: url('/dist/img/icon/mail.png') no-repeat;background-size: 100%"></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-xs-8" style="position: relative;height: 195px;">
+            <div id="info-contact"></div>
+        </div>
+    </div>
+    <div id="mail-to" style="display: none">
+        <div class="form-group">
+            <label for="comment"></label>
+            <textarea class="form-control" id="comment" placeholder="想对我说点什么吗?(outlook)"></textarea>
+        </div>
+        <a href="mailto:fuyi1205@126.com"><button class="btn btn-success">写完了，发给我</button></a>
+        <button class="btn btn-danger">写错了，重写</button>
+    </div>
+</section>
+</div>
+<footer>
+    <p>2016-doomsday<br/><span>Blog of FXY</span><span>A Student from NJUPT(2010-2017)</span></p>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+<script src="//cdn.bootcss.com/angular.js/1.5.8/angular-animate.min.js"></script>
+<script src="/dist/js/blog.min.js"></script>
+</body>
+</html>

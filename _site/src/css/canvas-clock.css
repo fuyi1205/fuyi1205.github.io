@@ -1,0 +1,12 @@
+#canvas-clock {
+  display: none;
+  position: absolute;
+  top: 26%;
+  right: 20%;
+  width: 200px;
+  cursor: pointer;
+  z-index: 10; }
+
+@media screen and (max-width: 900px) {
+  #drawing {
+    display: none; } }

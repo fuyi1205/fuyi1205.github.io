@@ -1,0 +1,145 @@
+#index-container {
+  position: relative;
+  height: 768px;
+  background: url("/dist/img/bgIndex.jpg") no-repeat;
+  background-size: cover;
+}
+
+#index-contact {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 340px;
+  padding: 15px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#icon-contact{
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  border-right: 2px solid #fff;
+  li {
+    width: 30px;
+    height: 30px;
+    margin: 15px auto;
+    background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    list-style: none;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+#info-contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 128px;
+  height: 128px;
+  margin: -64px 0 0 -74px;
+  font-size: 18px;
+  font-family: Calibri, sans-serif;
+  line-height: 128px;
+  background: url("../../dist/img/info/face.png");
+  background-size: cover !important;
+  text-indent: -10px;
+}
+
+#registed{
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  &:hover{
+    color: #337ab7;
+  }
+}
+
+.log-form {
+  display: none;
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+  background: #fff;
+  border: none;
+  z-index: 10;
+  text-align: center;
+  .ng-hide-remove{
+    color: red;
+  }
+  .panel-heading{
+    background-color: rgba(0,0,0,.8);
+  }
+  .panel-body{
+    //padding: 3rem 1.5rem;
+    .form-group {
+      position: relative;
+      font-size: 1.5rem;
+      text-align: left;
+      margin-bottom: 2rem;
+      input.input1 {
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: 2px solid #000;
+        border-radius: 0;
+        &:focus {
+          animation: inputChange 1s ease-in-out forwards;
+        }
+        @keyframes inputChange {
+          0% {
+            width: 100%;
+            border-bottom: 4px solid #337ab7;
+          }
+          50% {
+            padding: 0.5rem 0.5rem 0.5rem 0;
+          }
+          100% {
+            width: 100%;
+            padding: 0.5rem 0.5rem 0.5rem 0;
+            border-bottom: 4px solid #337ab7;
+          }
+        }
+      }
+
+      input.checkbox{
+        width: auto;
+        height: auto;
+        display: inline;
+      }
+      .glyphicon {
+        position: absolute;
+        right: 0;
+      }
+      .glyphicon-remove {
+        color: red;
+      }
+    }
+    .btn-primary, .btn-default{
+      background-color: rgba(0,0,0,.8);
+      color: #fff;
+      border: none;
+    }
+  }
+  .shut-login{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    &:hover{
+      color: #000;
+    }
+  }
+}

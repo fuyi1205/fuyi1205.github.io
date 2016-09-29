@@ -1,0 +1,16 @@
+footer {
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #777;
+  text-align: center;
+  background: #080808; }
+  footer p {
+    line-height: 25px;
+    margin-bottom: 0; }
+    footer p span {
+      margin: 5px; }
+      footer p span:nth-child(2) {
+        color: #fff; }

@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+  .view-desktop {
+    display: none;
+  }
+
+  .view-phone {
+    display: block;
+  }
+
+  #index-contact {
+    width: 80%;
+  }
+
+  #blog-search .row > div {
+    text-align: center !important;
+    margin: 10px 0;
+  }
+
+  .article-li span {
+    display: none;
+  }
+
+  #tank-container .row1, .row2, .row3, .row4 {
+    height: 166px;
+    font-size: 16px;
+  }
+
+  #san-container .grid-sizer,
+  #san-container .grid-item {
+    width: 50%;
+  }
+
+  .search-button-box{
+    padding-top: 0.8rem;
+  }
+
+  #blog-search span{
+    float: none;
+  }
+}

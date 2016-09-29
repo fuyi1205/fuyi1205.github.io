@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog of Mr.fu</title>
+    <link rel="icon" href="/dist/img/favicon.ico"/>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/blog.min.css"/>
+</head>
+
+<body ng-app="MyBlog">
+<header ng-controller="loginCtrl">
+    <nav class="navbar navbar-inverse view-desktop">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Blog of FXY</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active" id="home-page"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle dropdown-desktop" data-toggle="dropdown" href="/blog/">我的博文</a>
+                    <ul class="dropdown-menu">
+                        <li id="show-info"><a href="#">摘要</a></li>
+                        <li id="hide-info"><a href="#">简略</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle dropdown-desktop" data-toggle="dropdown" href="/tank/">坦克世界</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./tank/">精英</a></li>
+                        <li><a href="http://182.18.61.50/search.html">战力</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle dropdown-desktop" data-toggle="dropdown" href="/san/">三国志</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/">人物</a></li>
+                        <li><a href="/">历史</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="toggle-canvas-clock" class="log"><span class="glyphicon glyphicon-time"></span> 时间</li>
+                <li id="register-login-btn" class="log"><span class="glyphicon glyphicon-user"></span> 登录/注册</li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar view-phone">
+        <div class="container-fluid">
+            <div class="col-xs-10">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Blog of FXY</a>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="dropdown">
+                    <span class="dropdown-toggle glyphicon glyphicon-th-list" data-toggle="dropdown"></span>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="/blog/">我的博文</a></li>
+                        <li><a href="/tank/">坦克世界</a></li>
+                        <li><a href="/san/">三国志</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="panel panel-primary log-form">
+        <div class="panel-heading">
+            <div class="panel-title">Welcome</div>
+        </div>
+        <div class="panel-body">
+            <span id="registed" ng-click="registed()" ng-bind="registedInfo"></span>
+            <form role="form" name="loginForm" ng-submit="login()" novalidate>
+                <div class="form-group has-feedback">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" class="form-control input1" name="username" placeholder="请输入至少4位的用户名" required ng-minlength="4" ng-model="username">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="loginForm.username.$valid"></span>
+                </div>
+                <div class="form-group  has-feedback">
+                    <label for="pwd">密码:</label>
+                    <!--爬过一个小坑，注意一定要设置ng-model，只有这样在loginForm.pwd中才能获取到相应的值，表单检验才是有效的-->
+                    <input type="password" id="pwd" class="form-control input1" name="pwd" placeholder="请输入至少8位的密码" required ng-minlength="8" ng-model="pwd">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="loginForm.pwd.$valid && loginForm.pwd.$dirty"></span>
+                </div>
+                <div class="form-group  has-feedback" ng-hide="ifRegisted">
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" class="form-control input1" name="email" placeholder="请输入如haha@hehe.com" required ng-model="email">
+                    <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="loginForm.email.$valid && loginForm.email.$dirty"></span>
+                </div>
+                <div class="form-group  has-feedback" ng-hide="ifRegisted">
+                    <label for="agree"><a href="https://www.baidu.com/duty/">同意本博客的霸王条款</a></label>
+                    <input type="checkbox" id="agree" class="form-control checkbox" name="agree" required ng-model="agree">
+                </div>
+                <button type="submit" class="btn btn-primary" name="login" ng-disabled="loginForm.$invalid || loginForm.$indirty">登录</button>
+                <button type="submit" class="btn btn-default" name="register" ng-disabled="loginForm.$invalid || loginForm.$indirty" ng-hide="ifRegisted">注册</button>
+                <button type="submit" name="reset" class="btn btn-danger"> 重置</button>
+            </form>
+        </div>
+        <span class="glyphicon glyphicon-remove shut-login"></span>
+    </section>
+    <section id="canvas-clock" draggable="true">
+        <canvas id="drawing" width="200px" height="200px" draggable="true"></canvas>
+    </section>
+</header>
+<div class="blog-body bg-con">
+    <div class="container">
+        <h2 class="con-title">用JavaScript获取页面元素的位置（转载）</h2>
+<p class="con-date">30 May 2016</p>
+<div class="con-content">
+    <p>制作网页的过程中，你有时候需要知道某个元素在网页上的确切位置。下面的教程总结了Javascript在网页定位方面的相关知识。</p>
+    <h3>一、网页的大小和浏览器窗口的大小</h3>
+    <p>
+        首先，要明确两个基本概念。
+        一张网页的全部面积，就是它的大小。通常情况下，网页的大小由内容和CSS样式表决定。
+        浏览器窗口的大小，则是指在浏览器窗口中看到的那部分网页面积，又叫做viewport（视口）。
+        很显然，如果网页的内容能够在浏览器窗口中全部显示（也就是不出现滚动条），那么网页的大小和浏览器窗口的大小是相等的。如果不能全部显示，则滚动浏览器窗口，可以显示出网页的各个部分。<br/>
+    </p>
+    <h3>二、获取网页的大小</h3>
+    <p>网页上的每个元素，都有clientHeight和clientWidth属性。这两个属性指元素的内容部分再加上padding的所占据的视觉面积，不包括border和滚动条占用的空间。</p>
+    <div class="img-container">
+        <img src="/dist/img/post/20166121.gif" alt="图被妖怪住走了"/>
+    </div>
+    <p class="img-title">图一 clientHeight和clientWidth属性</p>
+    <p>因此，document元素的clientHeight和clientWidth属性，就代表了网页的大小。</p>
+    <pre>
+        function getViewport(){
+            if(document.compatMode == "BackCompat"){
+                return {
+                    width: document.body.clientWidth,
+                    height: document.body.clientHeight
+                }
+
+            }else{
+                return {
+                    width: document.documentElement.clientWidth,
+                    height: document.documentElement.clientHeight
+                }
+            }
+        }</pre>
+    <p>上面的getViewport函数就可以返回浏览器窗口的高和宽。使用的时候，有三个地方需要注意：<br/>
+    (1)这个函数必须在页面加载完成后才能运行，否则document对象还没生成，浏览器会报错。<br/>(2)大多数情况下，都是document.documentElement.clientWidth返回正确值。但是，在IE6的quirks模式中，document.body.clientWidth返回正确的值，因此函数中加入了对文档模式的判断。<br/>(3)clientWidth和clientHeight都是只读属性，不能对它们赋值</p>
+    <h3>三、获取网页大小的另一种方法</h3>
+    <p>
+        网页上的每个元素还有scrollHeight和scrollWidth属性，指包含滚动条在内的该元素的视觉面积。
+        那么，document对象的scrollHeight和scrollWidth属性就是网页的大小，意思就是滚动条滚过的所有长度和宽度。
+        仿照getViewport()函数，可以写出getPagearea()函数。
+    </p>
+    <pre>
+        function getPagearea(){
+            if(document.compatMode == "BackCompat"){
+                return {
+                    width: document.body.scrollWidth,
+                    height: document.body.scrollHeight
+                }
+
+            }else{
+                return {
+                    width: document.documentElement.scrollWidth,
+                    height: document.documentElement.scrollHeight
+                }
+            }
+        }</pre>
+    <p>但是，这个函数有一个问题。如果网页内容能够在浏览器窗口中全部显示，不出现滚动条，那么网页的clientWidth和scrollWidth应该相等。但是实际上，不同浏览器有不同的处理，这两个值未必相等。所以，我们需要取它们之中较大的那个值，因此要对getPagearea()函数进行改写。</p>
+    <pre>
+        function getPagearea(){
+            if(document.compatMode == "BackCompat"){
+                return {
+                    width: Math.max(document.body.clientWidth,document.body.scrollWidth),
+                    height: Math.max(document.body.clientHeight,document.body.scrollHeight)
+                }
+            }else{
+                return {
+                    width: Math.max(document.documentElement.clientWidth,document.documentElement.scrollWidth),
+                    height: Math.max(document.documentElement.clientHeight,document.documentElement.scrollHeight)
+                }
+            }
+        }</pre>
+    <h3>四、获取网页元素的绝对位置</h3>
+    <p>网页元素的绝对位置，指该元素的左上角相对于整张网页左上角的坐标。这个绝对位置要通过计算才能得到。</p>
+    <p>首先，每个元素都有offsetTop和offsetLeft属性，表示该元素的左上角与父容器（offsetParent对象）左上角的距离。所以，只需要将这两个值进行累加，就可以得到该元素的绝对坐标。</p>
+    <div class="img-container">
+        <img src="/dist/img/post/20166122.gif" alt="图被妖怪住走了"/>
+    </div>
+    <p class="img-title">图二 offsetTop和offsetLeft属性</p>
+    <p>下面两个函数可以用来获取绝对位置的横坐标和纵坐标。</p>
+    <pre>
+        function getElementLeft(element){
+            var actualLeft = element.offsetLeft;
+                current = element.offsetParent;
+            while(current != null){
+                actualLeft += current.offsetLeft;
+                current = current.offserParent;
+            }
+            return actualLeft;
+        }
+
+        function getElementTop(element){
+            var actualTop = element.offsetTop;
+                current = element.offsetParent;
+            while(current != null){
+                actualTop += current.offsetTop;
+                current = current.offserParent;
+            }
+            return actualTop;
+        }</pre>
+    <p>由于在表格和iframe中，offsetParent对象未必等于父容器，所以上面的函数对于表格和iframe中的元素不适用。</p>
+    <h3>五、获取网页元素的相对位置</h3>
+    <p>网页元素的相对位置，指该元素左上角相对于浏览器窗口左上角的坐标。</p>
+    <p>有了绝对位置以后，获得相对位置就很容易了，只要将绝对坐标减去页面的滚动条滚动的距离就可以了。滚动条滚动的垂直距离，是document对象的scrollTop属性；滚动条滚动的水平距离是document对象的scrollLeft属性。</p>
+    <div class="img-container">
+        <img src="/dist/img/post/20166123.gif" alt="图被妖怪住走了"/>
+    </div>
+    <p class="img-title">图三 scrollTop和scrollLeft属性</p>
+    <p>对上一节中的两个函数进行相应的改写：</p>
+    <pre>
+        function getElementLeft(element){
+            var actualLeft = element.offsetLeft,
+                current = element.offsetParent;
+            while(current != null){
+                actualLeft += current.offsetLeft;
+                current = current.offsetParent;
+            }
+            if(document.CompatMode == "BackCompact"){
+                var elementScrollLeft = document.body.scrollLeft;
+            }else{
+                var elementScrollLeft = document.documentElement.scrollLeft;
+            }
+            return actualLeft - elementScrollLeft;
+        }
+
+        function getElementTop(element){
+            var actualTop = element.offsetTop,
+                current = element.offsetParent;
+            while(current != null){
+                actualTop += current.offsetTop;
+                current = current.offserParent;
+            }
+            if(document.CompatMode == "BackCompact"){
+                var elementScrollTop = document.body.scrollTop;
+            }else{
+                var elementScrollTop = document.documentElement.scrollTop;
+            }
+            return actualTop - elementScrollTop;
+        }</pre>
+    <p>scrollTop和scrollLeft属性是可以赋值的，并且会立即自动滚动网页到相应位置，因此可以利用它们改变网页元素的相对位置。另外，element.scrollIntoView()方法也有类似作用，可以使网页元素出现在浏览器窗口的左上角。</p>
+    <h3>六、获取元素位置的快速方法</h3>
+    <p>除了上面的函数以外，还有一种快速方法，可以立刻获得网页元素的位置。</p>
+    <p>那就是使用getBoundingClientRect()方法。它返回一个对象，其中包含了left、right、top、bottom四个属性，分别对应了该元素的左上角和右下角相对于浏览器窗口（viewport）左上角的距离。</p>
+    <p>所以，网页元素的相对位置就是</p>
+    <pre>
+        var x = this.getBoundingClientRect().left;
+        var y = this.getBoundingClientRect().top;
+        加上滚动距离，就可以得到绝对位置
+        var x = this.getBoundingClientRect().left + document.documentElement.scrollleft;
+        var y = this.getBoundingClientRect().top + document.documentElement.scrollTop;</pre>
+    <p>目前，IE、Firefox 3.0+、Opera 9.5+都支持该方法，而Firefox 2.x、Safari、Chrome、Konqueror不支持。</p>
+</div>
+    </div>
+</div>
+
+<footer>
+    <p>2016-doomsday<br/><span>Blog of FXY</span><span>A Student from NJUPT(2010-2017)</span></p>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+<script src="//cdn.bootcss.com/angular.js/1.5.8/angular-animate.min.js"></script>
+<script src="/dist/js/blog.min.js"></script>
+</body>
+</html>

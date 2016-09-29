@@ -1,0 +1,73 @@
+.view-phone {
+  display: none;
+  margin-bottom: 0;
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  .col-xs-2 {
+    height: 50px;
+    text-align: center;
+  }
+  a {
+    text-align: center;
+    color: #fff!important;
+  }
+  .glyphicon-th-list {
+    font-size: 20px;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  .dropdown-menu{
+    background: rgba(0,0,0,.3);
+  }
+}
+
+.view-desktop {
+  padding-left: 5%;
+  margin-bottom: 0;
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  .navbar-brand {
+    font-size: 1.4em;
+  }
+  .navbar-right {
+    padding-right: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .log {
+    position: relative;
+    height: 50px;
+    margin: 0 0.5rem;
+    line-height: 50px;
+    cursor: pointer;
+    span{
+      margin: 0 0.5rem;
+    }
+  }
+  .dropdown-menu {
+    background: rgba(0, 0, 0, 0.3);
+    li a {
+      font-size: 1.2em;
+      color: rgb(255, 255, 255);
+    }
+  }
+  .dropdown-toggle:hover, .log:hover{
+    animation: lr 0.8s ease-in-out;
+  }
+}
+
+@keyframes lr {
+  0%   {transform: rotate(10deg)}
+  10%   {transform: rotate(-10deg)}
+  20%   {transform: rotate(8deg)}
+  30%   {transform: rotate(-8deg)}
+  40%   {transform: rotate(6deg)}
+  50%   {transform: rotate(-6deg)}
+  60%   {transform: rotate(4deg)}
+  70%   {transform: rotate(-4deg)}
+  80%   {transform: rotate(2deg)}
+  90%   {transform: rotate(-2deg)}
+  100%   {transform: rotate(0deg)}
+}

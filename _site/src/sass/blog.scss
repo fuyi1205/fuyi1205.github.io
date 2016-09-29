@@ -1,0 +1,89 @@
+#blog-container {
+  background: #f4f4f4;
+}
+
+#blog-container .container, #tank-container .container {
+  padding: 30px 50px;
+  @media screen and (max-width: 768px) {
+    padding: 10px 20px;
+  }
+}
+
+#blog-search {
+  margin-bottom: 30px;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  .row > div:nth-child(1) {
+    text-align: right;
+  }
+  input {
+    display: inline-block;
+    width: 40%;
+    height: 31px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    transition: width 0.3s;
+    &:focus {
+      width: 80%;
+    }
+  }
+  span {
+    float: left;
+    margin: 0 5px;
+    font-size: 1.5rem;
+    padding: 6px 16px;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.5);
+    &:hover {
+      background: rgb(0, 0, 0);
+    }
+  }
+}
+
+#search-button, #reset-button {
+  cursor: pointer;
+}
+
+#article-ul {
+  list-style: none;
+  .article-li {
+    position: relative;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem 1rem 1rem 2rem;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.01);
+    border-radius: 1px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    a {
+      padding: 6px 0 6px 3px;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: text-shadow 0.2s;
+      color: #000;
+      &:hover {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
+    }
+    span {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 2rem;
+    }
+    .article-h3 {
+      .con-content {
+        margin: 0;
+        h3 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

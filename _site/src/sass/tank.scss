@@ -1,0 +1,92 @@
+#tank-animation {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}
+
+#tank-shell {
+  position: absolute;
+  top: 15px;
+  width: 10px;
+  height: 3px;
+  background: #EEAC3C;
+  z-index: -10;
+}
+
+#tank-model {
+  position: relative;
+  left: 95%;
+  width: 50px;
+  height: 50px;
+  background: url("../../dist/img/tank/tank.png") center no-repeat;
+  background-size: cover;
+  animation: tankMove 20s ease-in-out infinite ;
+}
+
+@keyframes tankMove {
+  from {
+    left: 95%;
+  }
+  to{
+    left: 0;
+  }
+}
+
+#tank-container{
+  .row {
+    position: relative;
+    margin: 10px 0;
+    > div div {
+      height: 100%;
+      transition: box-shadow 0.1s;
+      &:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+  .row1 {
+    height: 250px;
+    margin: 15px 0;
+    font-size: 40px;
+    @media screen and (max-width: 1100px){
+      font-size: 30px;
+    }
+  }
+  .row2 {
+    height: 166px;
+    margin: 15px 0;
+    font-size: 24px;
+    @media screen and (max-width: 1200px){
+      font-size: 16px;
+    }
+    @media screen and (max-width: 768px){
+      font-size: 24px;
+    }
+  }
+  .row3 {
+    height: 125px;
+    margin: 15px 0;
+    font-size: 20px;
+    @media screen and (max-width: 1200px){
+      font-size: 16px;
+    }
+  }
+  .row4 {
+    height: 83px;
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  .tank-intro {
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    span {
+      margin: 0 10px;
+    }
+  }
+}
